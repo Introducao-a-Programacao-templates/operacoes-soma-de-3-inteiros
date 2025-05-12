@@ -15,13 +15,15 @@
                 "editor.formatOnSave": true,
                 "editor.wordWrap": "on", //melhor configuração s2
                 "editor.defaultFormatter": "esbenp.prettier-vscode",
+                "prettier.singleQuote": true,
                 "prettier.tabWidth": 4 //hora de acabar com essa briga, sempre soubemos que tab = 4 spaces
             },
             // Adicione a extensão pelo ID
             "extensions": [
                 "streetsidesoftware.code-spell-checker",
                 "streetsidesoftware.code-spell-checker-portuguese-brazilian",
-                "esbenp.prettier-vscode"
+                "esbenp.prettier-vscode",
+                "ms-vscode.vscode-typescript-next"
             ]
         }
     },
@@ -35,7 +37,7 @@
         "ghcr.io/devcontainers-extra/features/zsh-plugins:0": {
             "omzPlugins": "https://github.com/zsh-users/zsh-autosuggestions"
         },
-        "ghcr.io/gvatsal60/dev-container-features/sonarlint:1": {},
         "ghcr.io/guiyomh/features/vim:0": {}
-    }
+    },
+    "postCreateCommand": "npm install"
 }
